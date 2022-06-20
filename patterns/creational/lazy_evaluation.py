@@ -61,9 +61,7 @@ class Person:
 
     @lazy_property
     def relatives(self):
-        # Get all relatives, let's assume that it costs much time.
-        relatives = "Many relatives."
-        return relatives
+        return "Many relatives."
 
     @lazy_property2
     def parents(self):

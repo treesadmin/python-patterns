@@ -84,7 +84,7 @@ class Scientist(AbstractExpert):
 class Professor(AbstractExpert):
     @property
     def is_eager_to_contribute(self):
-        return True if self.blackboard.common_state["problems"] > 100 else False
+        return self.blackboard.common_state["problems"] > 100
 
     def contribute(self):
         self.blackboard.common_state["problems"] += random.randint(1, 2)
